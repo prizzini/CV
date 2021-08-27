@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body {
+    width: auto;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.description {
+    width: auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.description li {
+    display: flex;
+    padding: 0px 10px;
+    position: relative;
+    font-size: 11px;
+    align-items: center;
+}
+
+.description p {
+    padding-left: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2%;
+}
+
+ul ul li {
+    position: relative;
+    display: none;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    flex: 1;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.4s ease 0s;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.nav-links ul li {
+    list-style: none;
+    padding: 8px 12px;
+    display: inline-block;
+    position: relative;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(255, 55, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgba(255, 55, 0, 0.726);
+    
+}
+
+.section-2 {
+    align-items: center;
+    
+}
+
+.icons {
+    list-style: none;
+    background-color: rgb(231, 7, 7);
+    padding: 10px;
+    display: center;
+    text-align: center;
+    align-items: center;
+}
+
+.icons li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 25px;
+    margin: 0 35px;
+    
+}
+
+.icons li a i{
+    transition: all 0.4s ease 0s;
+    color: white;
+}
+
+.icons li a i:hover {
+    color: black;
+    padding-left: 15px;
+}
+
+/* -- Search-Bar -- */
+.search-box {
+    display: inline-flex;
+    position: relative;
+    transition: translate(-50%,-50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px 20PX;
+}
+
+.search-box:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: white;
+}
+
+.search-btn {
+    color: rgb(255, 55, 0);
+    float: right;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+    transition: 0.4s;
+}
+
+.search-box i {
+    color: rgb(255, 55, 0);
+}
+
+
+/* -- Menu-Bar -- */
+.menu-bar {
+    display: inline-block;
+    padding-left: 1px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    width: 200px;
+    padding: 20px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.active, .menu-bar ul li:hover {
+    border-radius: 2px;
+    background-color: white;
+}
+
+.active, .active1:hover{
+    color: rgb(255, 55, 0);
+    text-decoration: underline;
+}
+
+.sub-menu-1 {
+    display: none;
+    border: 4px 4px 4px 4px;
+    border-radius: 3px;
+    color: white;
+}
+
+.sub-menu-1 ul li a {
+    color: white;
+}
+
+.sub-menu-1 ul li a:hover {
+    color: rgba(0, 0, 0, 0.739);
+    transition: all 0.4s ease 0s;
+    padding-left: 8px;
+    text-decoration: underline;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: -65px;
+    
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    padding: 20px;
+    background: transparent;
+    text-align: left;
+    background-color: rgb(255, 55, 0);
+    color: white;
+}
+
+.section3{
+    background-color: red;
+    text-align: center;
+    display: flex;
+}
+
+/* ----Buy---- */
+.buy {
+    width: 100%;
+    height: 71.5vh;
+    background-image: url(Images/Background\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+    background-color: rgba(255, 0, 0, 0.315);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+.p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-col {
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.buy-col:hover {
+    box-shadow: 0 0 20px 0px rgba(255, 0, 0, 0.643);
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*----testtimonials-----*/
+.h1 {
+    color: black;
+    padding-bottom: 15px;
+}
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p {
+    padding: 0;
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.testimonials-col .fa {
+    color: #f44336;
+}
+
+@media(max-width:700px){
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+}
+
+/*--Call To Action--*/
+.cta {
+    margin: 1px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(Images/Background\ 2.jpg);/* linear-gradient (rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Images/Teambanner.jpg); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.hero-btn {
+    color: white;
+}
+
+@media(max-width: 700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+}
+
+/*---Footer---*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/*----footer----*/
+.iconss .fa{
+    color: red;
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.iconss a i:hover {
+    padding-left: 8px;
+    size: 15px;
+}
+
+.fa-heart-o {
+    color: #f44336;
+}
